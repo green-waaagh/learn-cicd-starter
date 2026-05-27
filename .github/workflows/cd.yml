@@ -21,8 +21,6 @@ jobs:
       - name: Build app
         run: scripts/buildprod.sh
 
-  gcp_deploy:
-    steps:
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
